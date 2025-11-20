@@ -72,8 +72,8 @@ export function VelocityScroll() {
       <div className="relative h-[170vh]">
         {/* El marquee text se ve por 100vh normales, luego 70vh sticky */}
         <div className="sticky top-0 h-screen flex flex-col items-center justify-center font-formula-condensed uppercase text-black bg-white">
-          <ParallaxText baseVelocity={2.2}>TECH LABS</ParallaxText>
-          <ParallaxText baseVelocity={-2.2}>TECH LABS</ParallaxText>
+          <ParallaxText baseVelocity={2.2}>SignalScout</ParallaxText>
+          <ParallaxText baseVelocity={-2.2}>SignalScout</ParallaxText>
         </div>
       </div>
     </div>

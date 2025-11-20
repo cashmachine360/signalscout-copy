@@ -31,8 +31,9 @@ export default function Index() {
     },
     {
       title: "Whitepaper",
-      href: "#",
+      href: "https://signalscout.mintlify.app/whitepaper",
       src: "home.png",
+      external: true,
     },
     {
       title: "Developer",
@@ -40,7 +41,7 @@ export default function Index() {
       src: "home.png",
     },
     {
-      title: "Buy $TECH",
+      title: "Buy $SCOUT",
       href: "#",
       src: "contact.png",
     },

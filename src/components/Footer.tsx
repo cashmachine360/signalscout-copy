@@ -39,37 +39,10 @@ const Footer: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 100 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="sticky bottom-0 left-0 w-full h-80 bg-[#EBEFEF] flex justify-center items-center z-0" 
+      className="sticky bottom-0 left-0 w-full h-80 bg-[#EBEFEF] flex justify-center items-center z-[100]"
     >
-      <div className="relative overflow-hidden w-full h-full flex justify-end px-12 text-right items-start py-12 text-black">
-        <div className="flex flex-row space-x-12 sm:space-x-16 md:space-x-24 text-sm sm:text-lg md:text-xl">
-          <ul className="space-y-2">
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Home
-            </li>
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Docs
-            </li>
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Comps
-            </li>
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Whitepaper
-            </li>
-          </ul>
-          <ul className="space-y-2">
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Github
-            </li>
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              Instagram
-            </li>
-            <li className="hover:text-gray-600 hover:underline cursor-pointer transition-all duration-300 ease-out transform hover:translate-x-1">
-              X (Twitter)
-            </li>
-          </ul>
-        </div>
-        <h2 className="absolute bottom-0 left-0 translate-y-1/3 sm:text-[192px] text-[80px] ">
+      <div className="relative overflow-hidden w-full h-full flex justify-center items-center px-12 text-black pointer-events-auto">
+        <h2 className="sm:text-[192px] text-[80px]">
           ❤
         </h2>
       </div>

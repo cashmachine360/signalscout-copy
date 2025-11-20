@@ -70,7 +70,7 @@ export default function Home() {
         style={{ display: isLoading ? 'none' : 'block' }}
       >
         <Head>
-          <title>Tech Labs</title>
+          <title>SignalScout</title>
         </Head>
       {/* Fixed background gradient */}
       {/* <div className="max-h-screen max-w-screen overflow-hidden"> */}
@@ -118,10 +118,10 @@ export default function Home() {
         <div className="h-full w-full flex flex-col lg:flex-row">
           
           {/* MOBILE/TABLET LAYOUT (hasta lg) */}
-          {/* 1. BETTER FOR - Primer elemento en móvil */}
+          {/* 1. SCOUT FOR - Primer elemento en móvil */}
           <div className="lg:hidden flex flex-col items-center justify-center py-8 px-6 order-1">
             <h1 className="text-white text-[4rem] sm:text-[6rem] md:text-[8rem] font-black leading-[0.9] text-center" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
-              BETTER
+              SCOUT
             </h1>
             <h1 className="text-white text-[4rem] sm:text-[6rem] md:text-[8rem] font-black leading-[0.8] text-center" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
               FOR
@@ -137,10 +137,10 @@ export default function Home() {
             />
           </div>
           
-          {/* 3. ALL - Tercer elemento en móvil */}
+          {/* 3. PROFIT - Tercer elemento en móvil */}
           <div className="lg:hidden flex items-center justify-center py-4 order-3">
             <h1 className="text-white text-[4rem] sm:text-[6rem] md:text-[8rem] font-black leading-[0.8] text-center" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
-              ALL
+              PROFIT
             </h1>
           </div>
           
@@ -179,18 +179,18 @@ export default function Home() {
           </div>
           
           {/* DESKTOP LAYOUT (lg y superior) - Diseño original perfecto */}
-          {/* Lado izquierdo - BETTER FOR */}
-          <div className="hidden lg:flex flex-1 flex-col justify-center pl-16 translate-y-[300px]">
+          {/* Lado izquierdo - SCOUT TRADE */}
+          <div className="hidden lg:flex flex-1 flex-col justify-center pl-16 translate-y-[210px]">
             <h1 className="text-white text-[10.2rem] xl:text-[17rem] font-black leading-[0.9]" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
-              BETTER
+              SCOUT
             </h1>
             <h1 className="text-white text-[10.2rem] xl:text-[17rem] font-black leading-[0.8]" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
-              FOR
+              TRADE
             </h1>
           </div>
           
           {/* Centro - Logo 3D */}
-          <div className="hidden lg:flex flex-1 translate-x-[100px] translate-y-[100px] items-center justify-center overflow-hidden">
+          <div className="hidden lg:flex flex-1 translate-x-[100px] translate-y-[70px] items-center justify-center overflow-hidden">
             <img 
               src="/logo3Dsecond.png" 
               alt="Logo 3D" 
@@ -199,7 +199,7 @@ export default function Home() {
           </div>
           
           {/* Lado derecho - Navigation y ALL */}
-          <div className="hidden lg:flex flex-1 flex-col translate-x-[200px] translate-y-[350px] justify-between pr-16 py-16">
+          <div className="hidden lg:flex flex-1 flex-col translate-x-[200px] translate-y-[245px] justify-between pr-16 py-16">
             {/* Navigation superior */}
             <div>
               <h2 className="text-white text-base font-light mb-8" style={{ fontFamily: 'Formula Condensed', fontWeight: 300 }}>
@@ -216,28 +216,31 @@ export default function Home() {
                 <div 
                   className="text-white text-2xl xl:text-3xl font-light cursor-pointer hover:text-gray-300 transition-colors block" 
                   style={{ fontFamily: 'Formula Condensed', fontWeight: 300 }}
+                  onClick={() => window.open('https://signalscout.mintlify.app/whitepaper', '_blank')}
                 >
                   Whitepaper
                 </div>
                 <div 
                   className="text-white text-2xl xl:text-3xl font-light cursor-pointer hover:text-gray-300 transition-colors block" 
                   style={{ fontFamily: 'Formula Condensed', fontWeight: 300 }}
+                  onClick={() => window.open('https://x.com/i/communities/1989043819015217357', '_blank')}
                 >
                   Twitter
                 </div>
                 <div 
                   className="text-white text-2xl xl:text-3xl font-light cursor-pointer hover:text-gray-300 transition-colors block" 
                   style={{ fontFamily: 'Formula Condensed', fontWeight: 300 }}
+                  onClick={() => window.open('https://signalscout.mintlify.app/overview', '_blank')}
                 >
                   GitHub
                 </div>
               </nav>
             </div>
             
-            {/* ALL inferior */}
+            {/* PROFIT inferior */}
             <div className="self-end">
-              <h1 className="text-white translate-y-[-450px] translate-x-[-200px] text-[10.2rem] xl:text-[17rem] font-black leading-[0.8]" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
-                ALL
+              <h1 className="text-white translate-y-[-585px] translate-x-[-200px] text-[10.2rem] xl:text-[17rem] font-black leading-[0.8]" style={{ fontFamily: 'Formula Condensed', fontWeight: 900 }}>
+                PROFIT
               </h1>
             </div>
           </div>

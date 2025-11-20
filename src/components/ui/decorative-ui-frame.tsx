@@ -273,7 +273,10 @@ export const DecorativeUIFrame = ({
             <div
               className="text-2xl font-helvetica-now-text font-bold uppercase text-white hover:text-[#CDFE00] transition-colors duration-300 cursor-pointer"
               style={{ letterSpacing: "0.25em" }}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                window.open('https://t.me/SignalScoutAI_bot', '_blank');
+                setMenuOpen(false);
+              }}
             >
               EXTENSION
             </div>
@@ -281,17 +284,12 @@ export const DecorativeUIFrame = ({
             <div
               className="text-2xl font-helvetica-now-text font-bold uppercase text-white hover:text-[#CDFE00] transition-colors duration-300 cursor-pointer"
               style={{ letterSpacing: "0.25em" }}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                window.open('https://signalscout.mintlify.app/whitepaper', '_blank');
+                setMenuOpen(false);
+              }}
             >
               WHITEPAPER
-            </div>
-
-            <div
-              className="text-2xl font-helvetica-now-text font-bold uppercase text-white hover:text-[#CDFE00] transition-colors duration-300 cursor-pointer"
-              style={{ letterSpacing: "0.25em" }}
-              onClick={() => setMenuOpen(false)}
-            >
-              DEVELOPER
             </div>
 
             <div
@@ -302,17 +300,8 @@ export const DecorativeUIFrame = ({
                 className="px-6 py-3 text-lg font-helvetica-now-text font-bold uppercase text-black"
                 style={{ letterSpacing: "0.25em" }}
               >
-                Buy $TECH
+                Buy $SCOUT
               </span>
-              <div className="bg-black px-4 py-3 flex items-center justify-center rounded-l-lg">
-                <img
-                  className="scale-[2]"
-                  src="logoWhite.png"
-                  width={40}
-                  height={40}
-                  alt="logo"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -342,24 +331,12 @@ export const DecorativeUIFrame = ({
         <motion.img
           src="logoWhite.png"
           alt="Logo"
-          className="w-16 sm:w-20 md:w-28"
+          className="w-40 sm:w-48 md:w-68"
           style={{
             filter: logoFilter,
             transition: "filter 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
           }}
         />
-        <motion.span
-          className="text-2xl sm:text-3xl md:text-4xl font-bold"
-          style={{
-            fontFamily: "Formula Condensed, sans-serif",
-            fontWeight: 900,
-            color: linkTextColor,
-            transform: "scale(1.125) translateY(2px)",
-            letterSpacing: "2.5px",
-          }}
-        >
-          TECH LABS
-        </motion.span>
       </div>
 
       {/* Navigation Buttons */}
@@ -376,24 +353,19 @@ export const DecorativeUIFrame = ({
         <motion.div
           className="text-lg font-helvetica-now-text font-bold uppercase hover:text-[#CDFE00] hover:scale-105 transition-all duration-300 ease-out cursor-pointer relative group"
           style={{ color: linkTextColor }}
+          onClick={() => window.open('https://t.me/SignalScoutAI_bot', '_blank')}
         >
           <span className="relative z-10">Extension</span>
           <div className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out" />
         </motion.div>
         
         <motion.div
+          id="header-whitepaper-button"
           className="text-lg font-helvetica-now-text font-bold uppercase hover:text-[#CDFE00] hover:scale-105 transition-all duration-300 ease-out cursor-pointer relative group"
           style={{ color: linkTextColor }}
+          onClick={() => window.open('https://signalscout.mintlify.app/whitepaper', '_blank')}
         >
           <span className="relative z-10">Whitepaper</span>
-          <div className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out" />
-        </motion.div>
-        
-        <motion.div
-          className="text-lg font-helvetica-now-text font-bold uppercase hover:text-[#CDFE00] hover:scale-105 transition-all duration-300 ease-out cursor-pointer relative group"
-          style={{ color: linkTextColor }}
-        >
-          <span className="relative z-10">Developer</span>
           <div className="absolute inset-0 bg-white/5 rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300 ease-out" />
         </motion.div>
 
@@ -408,24 +380,8 @@ export const DecorativeUIFrame = ({
               color: linkBgColor,
             }}
           >
-            Buy $TECH
+            Buy $SCOUT
           </motion.span>
-          <div
-            className="px-3 py-2 flex items-center justify-center transition-all duration-300 rounded-l-lg"
-            style={{ backgroundColor: "#000000" }}
-          >
-            <motion.img
-              className="scale-[2.5]"
-              src="logo.png"
-              width={50}
-              height={50}
-              alt="logo"
-              style={{
-                filter: logoGreenToWhiteFilter,
-                transition: "filter 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
-              }}
-            />
-          </div>
         </motion.div>
 
         {/* Global Progress Percentage */}

@@ -1,6 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { opacity, background } from "./anim";
@@ -13,7 +14,15 @@ export default function index({ stickyCursorRef }: { stickyCursorRef: any }) {
   return (
     <div className={styles.header} style={{ zIndex: 100 }}>
       <div className={styles.bar}>
-        <Link href="/">TECH LABS</Link>
+        <Link href="/" className={styles.logoLink}>
+          <Image 
+            src="/logoWhite.png" 
+            alt="SignalScout Logo" 
+            width={365} 
+            height={97}
+            className={styles.logo}
+          />
+        </Link>
         <Magnetic>
           <div
             onClick={() => {
