@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Head from "next/head";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
 
 import { BackgroundPreview } from "@/components/ui/backgroundPreview";
@@ -28,32 +28,33 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
   // Variantes de animación para el fade in
-  const pageVariants = {
-    initial: {
-      opacity: 0
+const pageVariants: Variants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 1.2,
+      ease: "easeOut",
+      staggerChildren: 0.2,
     },
-    animate: {
-      opacity: 1,
-      transition: {
-        duration: 1.2,
-        ease: "easeOut",
-        staggerChildren: 0.2
-      }
-    }
-  };
+  },
+};
 
-  const childVariants = {
-    initial: {
-      opacity: 0
+const childVariants: Variants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
     },
-    animate: {
-      opacity: 1,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    }
-  };
+  },
+};
+
 
   return (
     <>
