@@ -131,7 +131,7 @@ export default function Home() {
           {/* 2. IMAGEN - Segundo elemento en móvil */}
           <div className="lg:hidden flex items-center justify-center py-8 order-2">
             <img 
-              src="/logo3Dsecond.png" 
+              src="/logo3d.png" 
               alt="Logo 3D" 
               className="w-[24rem] h-[24rem] sm:w-[30rem] sm:h-[30rem] md:w-[36rem] md:h-[36rem] object-contain"
             />
@@ -192,7 +192,7 @@ export default function Home() {
           {/* Centro - Logo 3D */}
           <div className="hidden lg:flex flex-1 translate-x-[100px] translate-y-[70px] items-center justify-center overflow-hidden">
             <img 
-              src="/logo3Dsecond.png" 
+              src="/logo3d.png" 
               alt="Logo 3D" 
               className="w-[40rem] xl:w-[50rem] h-[40rem] xl:h-[50rem] object-contain transform scale-[2.5]"
             />

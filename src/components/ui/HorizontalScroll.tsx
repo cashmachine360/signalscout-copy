@@ -45,7 +45,7 @@ const logo2Y = useTransform(scrollYProgress, [0.0, 0.5],
    typeof window !== 'undefined' ? -800 * (window.innerHeight / 1080) : -800]); // Mover logo derecho más arriba
 const logo2Rotate = useTransform(scrollYProgress, [0.0, 0.5], [15, 30]); // Rotación más evidente derecha (desde 15° base)
 
-// Animaciones para la sección Speed - logo3Dsecond.png
+// Animaciones para la sección Speed - logo3dthree.png
 // Se activa inmediatamente después de que Precision termina (0.3) - RANGO CORREGIDO
 const speedLogoX = useTransform(scrollYProgress, [0.35, 0.50, 0.65], [800, 0, -800]); // Movimiento más agresivo: empieza derecha, va a izquierda
 const speedLogoY = useTransform(scrollYProgress, [0.35, 0.50, 0.65], [200, 200, 200]); // 200px abajo del centro

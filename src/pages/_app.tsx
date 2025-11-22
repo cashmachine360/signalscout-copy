@@ -1,5 +1,3 @@
-"use client";
-
 import type { AppProps } from "next/app";
 import NavBar from "@/header/NavBar";
 // import StickyCursor from "@/stickyCursor";
